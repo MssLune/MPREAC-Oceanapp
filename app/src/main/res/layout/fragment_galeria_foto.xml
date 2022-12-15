@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".GaleriaFotoFragment">
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fontFamily="@font/bebas_neue"
+        android:paddingTop="2dp"
+        android:text="Resultado del procesamiento de imagenes"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Número de lance"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spnLance"
+                android:layout_width="110sp"
+                android:layout_height="35sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:background="#F8F8F8" />
+
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:width="130dp"
+                android:height="50dp"
+                android:background="@color/teal_200"
+                android:backgroundTint="#EBF4F4"
+                android:fontFamily="@font/bebas_neue"
+                android:text="Seleccionar"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnProcesarFoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:width="190dp"
+                android:height="50dp"
+                android:fontFamily="@font/bebas_neue"
+                android:insetLeft="6dp"
+                android:insetRight="6dp"
+                android:text="Procesar Fotos"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amethysta"
+                android:text="Galeria Imagenes"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+            >
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listGaleriaFotosTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#CCCCCC"
+            android:dividerHeight="1dp"
+            android:paddingLeft="2dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

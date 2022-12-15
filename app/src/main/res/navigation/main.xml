@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main.xml"
+    app:startDestination="@id/inicio">
+    <fragment
+        android:id="@+id/embarcacion"
+        android:name="com.app.oceanapp.EmbarcacionFragment"
+        android:label="fragment_embarcacion"
+        tools:layout="@layout/fragment_embarcacion" />
+    <fragment
+        android:id="@+id/lance"
+        android:name="com.app.oceanapp.LanceFragment"
+        android:label="fragment_lance"
+        tools:layout="@layout/fragment_lance" >
+        <action
+            android:id="@+id/action_lance_to_registrarFotoFragment"
+            app:destination="@id/registrarFotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.app.oceanapp.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/salir"
+        android:name="com.app.oceanapp.SalirFragment"
+        android:label="fragment_salir"
+        tools:layout="@layout/fragment_salir" />
+    <fragment
+        android:id="@+id/registrarFotoFragment"
+        android:name="com.app.oceanapp.RegistrarFotoFragment"
+        android:label="fragment_registrar_foto"
+        tools:layout="@layout/fragment_registrar_foto" >
+        <action
+            android:id="@+id/action_registrarFotoFragment_to_eliminarFotoFragment"
+            app:destination="@id/eliminarFotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eliminarFotoFragment"
+        android:name="com.app.oceanapp.EliminarFotoFragment"
+        android:label="fragment_eliminar_foto"
+        tools:layout="@layout/fragment_eliminar_foto" >
+        <action
+            android:id="@+id/action_eliminarFotoFragment_to_registrarFotoFragment"
+            app:destination="@id/registrarFotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/galeriaFotos"
+        android:name="com.app.oceanapp.GaleriaFotoFragment"
+        android:label="fragment_galeria_foto"
+        tools:layout="@layout/fragment_galeria_foto" >
+        <action
+            android:id="@+id/action_galeriaFotos_to_resultadoProcesamientoFragment"
+            app:destination="@id/resultadoProcesamientoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultadoProcesamientoFragment"
+        android:name="com.app.oceanapp.ResultadoProcesamientoFragment"
+        android:label="fragment_resultado_procesamiento"
+        tools:layout="@layout/fragment_resultado_procesamiento" >
+        <action
+            android:id="@+id/action_resultadoProcesamientoFragment_to_galeriaFotos"
+            app:destination="@id/galeriaFotos" />
+    </fragment>
+    <fragment
+        android:id="@+id/cerrarZarpe"
+        android:name="com.app.oceanapp.CerrarZarpeFragment"
+        android:label="fragment_cerrar_zarpe"
+        tools:layout="@layout/fragment_cerrar_zarpe" />
+</navigation>

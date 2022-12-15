@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_general"
+    >
+    <item
+        android:id="@+id/inicio"
+        android:icon="@drawable/ic_baseline"
+        android:title="Inicio"
+        />
+    <item
+        android:id="@+id/embarcacion"
+        android:icon="@drawable/ic_approval"
+        android:title="Zarpe de embarcación"
+        />
+    <item
+        android:id="@+id/lance"
+        android:icon="@drawable/ic_all_inclusive"
+        android:title="Lance"
+        />
+    <item
+        android:id="@+id/galeriaFotos"
+        android:icon="@drawable/ic_photo_album"
+        android:title="Preprocesamiento"
+        />
+    <item
+        android:id="@+id/cerrarZarpe"
+        android:icon="@drawable/ic_closed"
+        android:title="Cierre Zarpe"
+        />
+    <item
+        android:id="@+id/salir"
+        android:icon="@drawable/ic_exit"
+        android:title="Salir"
+        />
+</menu>
